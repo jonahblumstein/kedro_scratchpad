@@ -1,0 +1,32 @@
+iris_csv:
+  type: spark.SparkDataSet
+  filepath: data/01_raw/iris.csv
+  file_format: csv
+  load_args:
+    header: True
+    inferSchema: True
+
+iris_bronze:
+  type: kedro_datasets.databricks.ManagedTableDataSet
+  table: iris
+  database: bronze
+
+iris_features:
+  type: kedro_datasets.databricks.ManagedTableDataSet
+  table: iris_features
+  database: silver
+  
+iris_predictions:
+  type: kedro_datasets.databricks.ManagedTableDataSet
+  table: iris_predictions
+  database: gold
+
+
+regression_model:
+  type: kedro_datasets.databricks.MLFlowModel
+  flavor: mlflow.spark
+  model_name: iris_model
+
+accuracy:
+  type: kedro_datasets.databricks.MLFlowMetrics
+  prefix: iris

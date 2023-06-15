@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/448883110039749691
+creation_time: 1686759126038
+experiment_id: '448883110039749691'
+last_update_time: 1686759126038
+lifecycle_stage: active
+name: iris-databricks

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/Jonah_Blumstein/Library/CloudStorage/OneDrive-McKinsey%26Company/Documents/customerone/c1_databricks/iris-databricks/mlruns/766730891263456216/b9a0b724e1234736876ee774ae7315d7/artifacts
+end_time: 1686763302527
+entry_point_name: ''
+experiment_id: '766730891263456216'
+lifecycle_stage: active
+run_id: b9a0b724e1234736876ee774ae7315d7
+run_name: __default__
+run_uuid: b9a0b724e1234736876ee774ae7315d7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1686763302290
+status: 3
+tags: []
+user_id: Jonah_Blumstein
